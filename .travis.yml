@@ -1,7 +1,14 @@
 language: node_js
 node_js: node
-cache: 
+cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: g+jLLdr2IEOBO4m6xGlY3pRxXHjoK0l+agKZTe0jcRntI8IY3q8Kln0iKd5pG09Tix+BQnEBm75BtjqRRyd6VVvdWcm3+JNJ/nNAvIhZ1lTBkfi0wkasSo9PWUq5l+YugxbnzIHZz3N/+SRa2fyYi6qCoatatwWQ1RySKr0kh+avJmPGRbeO6p0tXHFemoTsvowGScmUxykrbECEXD+TaBCy+ygXcUO6/8C6Yb8zodOKayPzOrL26O4McHuCWJwDdmiXn67AEOAfBEgFFS8Q+kvLAo6p3EbdAwGKzzjRcnq93mTwriPeeJGtnBOUb2CS5wIseKMpk6vXZSsbik1Nfh9O3fnwaaO3fPuBealE+ZcQW9eY668/BCYzk3nw1RXul4UdiqR848eSqyok1T8Bdu13mlN0+Nnaf6Ipg2ksO/SO0/xbtENTFW+eSpDqw2JZpStLsnUs3ERQxPjdhyo+45VkOO56VEwXmmsZBnp7tp7FvCv8Quqbt92yJ5C8UxJxCMy2YoPIFoDmxASMTW5E7So96emfUzxuhpIQADD1Mn1enRYNBzionBjck46xY4KAJ31qznddOYKsyQRl95hYOocJDMaRdLRBGiT1a5IQD8KH67p61aZZIwHrsFFjeDt/PzdOazNCeN/rKPKI511uX7mCIykJMnf7srR6cZfSPsY=
+  app: rocky-ravine-51580
+  on:
+    repo: adrianasu/react-hot-cold
