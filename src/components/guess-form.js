@@ -13,7 +13,7 @@ export default class GuessForm extends React.Component {
     this.input.value = '';
     this.input.focus();
   }
-
+  
   render() {
     return (
       <form onSubmit={e => this.onSubmit(e)}>

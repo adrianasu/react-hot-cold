@@ -10,5 +10,5 @@ export default function GuessCount(props) {
         <h2 id="guessCount">
             You've made <span id="count">{props.guessCount}</span> {guessNoun}!
         </h2>
-    );
+    ); 
 }

@@ -31,7 +31,7 @@ export default class Game extends React.Component {
       this.setState({ feedback: 'Please enter a valid number' });
       return;
     }
-
+ 
     const difference = Math.abs(guess - this.state.correctAnswer);
 
     let feedback;
@@ -71,7 +71,6 @@ export default class Game extends React.Component {
     if (guesses.length > 0) {
       auralStatus += ` ${pluralize ? 'In order of most- to least-recent, they are' : 'It was'}: ${guesses.reverse().join(', ')}`;
     }
-
 
     this.setState({ auralStatus });
   }
